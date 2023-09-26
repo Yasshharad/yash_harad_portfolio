@@ -1,0 +1,122 @@
+.homeCubeSkills {
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    position: relative;
+    margin-left: 500px;
+    animation: cubeRotation 15s linear infinite alternate;
+    transform-style: preserve-3d;
+}
+
+.homeCubeSkillsFaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(255, 225, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+
+.homeCubeSkillsFaces>img {
+    width: inherit;
+    height: inherit;
+}
+
+.homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 150px);
+}
+
+
+@keyframes cubeRotation {
+    to {
+        transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+    }
+}
+
+@keyframes cubeShadow {
+    to {
+        transform: scale(1.2) translateY(-10px);
+    }
+}
+
+@keyframes homeskillsBoxAnimationOn {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 40px;
+    }
+}
+
+@keyframes homeskillsBoxAnimationOff {
+    from {
+        right: 40px;
+    }
+
+    to {
+        right: -300px;
+    }
+}
+
+@keyframes scrollPop {
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .homeCubeSkills {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        right: 400px;
+        top: 100px;
+    }
+
+    .homeCubeSkillsFace1 {
+        transform: translate3d(0, 0, 75px);
+    }
+
+    .homeCubeSkillsFace2 {
+        transform: rotateY(180deg) translate3d(0, 0, 75px);
+    }
+
+    .homeCubeSkillsFace3 {
+        transform: rotateY(-90deg) translate3d(0, 0, 75px);
+    }
+
+    .homeCubeSkillsFace4 {
+        transform: rotateY(90deg) translate3d(0, 0, 75px);
+    }
+
+    .homeCubeSkillsFace5 {
+        transform: rotateX(90deg) translate3d(0, 0, 75px);
+    }
+
+    .homeCubeSkillsFace6 {
+        transform: rotateX(-90deg) translate3d(0, 0, 75px);
+    }
+}
