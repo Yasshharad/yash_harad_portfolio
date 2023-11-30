@@ -6,6 +6,18 @@ import styled from 'styled-components';
 
 let data = [
   {
+    name: "Portfolio",
+    img: "https://res.cloudinary.com/db0txesgq/image/upload/v1701331867/Capture_x4dodj.jpg",
+    disc: "Portfolio made using ReactJs and Styled Component.",
+    github: "https://github.com/Yasshharad/yash_harad_portfolio"
+  },
+  {
+    name: "YatraSahayak-Ai based Intinerary Planner",
+    img: "https://res.cloudinary.com/db0txesgq/image/upload/v1701331427/1_widwh0.jpg",
+    disc: "Travel Itinerary planner using MERN stack and Ai algorithms.",
+    github: "https://github.com/Yasshharad/Yatra_Sahayak"
+  },
+  {
     name: "Sales Prediction For Grocery Store",
     img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1694691208/saless_bgeysx.png",
     disc: "Machine Learning Model using Linear Regression.",

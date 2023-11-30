@@ -25,8 +25,18 @@ const Header = () => {
                     </a>
                 </span>
                 <span>
+                    <a href="#education" onClick={handleNavLinkClick}>
+                        Education
+                    </a>
+                </span>
+                <span>
                     <a href="#skill" onClick={handleNavLinkClick}>
                         Skills
+                    </a>
+                </span>
+                <span>
+                    <a href="#experience" onClick={handleNavLinkClick}>
+                        Experience
                     </a>
                 </span>
                 <span>

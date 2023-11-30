@@ -4,6 +4,8 @@ import ProfComponent from "./components/Banner/ProfComponent";
 import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
+import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -12,10 +14,10 @@ function App() {
         <Header />
         <ProfComponent />
       </Banner>
+      <Education />
       <Skills />
-      <LightColor>
-        <Projects />
-      </LightColor>
+      <Experience />
+      <Projects />
       <Footer />
     </Container>
   );
@@ -31,8 +33,4 @@ const Banner = styled.div`
     height: 100%;
     padding-bottom: 2rem;
   }
-`;
-
-const LightColor = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `;

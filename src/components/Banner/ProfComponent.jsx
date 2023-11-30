@@ -123,11 +123,31 @@ const Texts = styled.div`
   }
   h3 {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-bottom: 1.2rem;
     text-transform: capitalize;
     color: #fffb00;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
   }
+  @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
   p {
     font-weight: 300;
   }
