@@ -18,7 +18,7 @@ const ProfComponent = () => {
           <span className="green">I'am</span>
           <h1 className="green">Yash Harad</h1>
           <h3>Full Stack Web Developer</h3>
-          <a href="https://drive.google.com/file/d/1YHPwHFTRdqiZW63H8zIohnungPsPK13O/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/19tFXCPd7uevneWyMl7LvUEuk1XylAHFr/view?usp=sharing" target="_blank" rel="noreferrer">
             Checkout My Resume
           </a>
           <br />
@@ -53,7 +53,7 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span>
-                <a href="https://www.facebook.com/yash.harad.0836/" target="_blank" rel="noreferrer">
+                <a href="https://leetcode.com/Yash_Harad/" target="_blank" rel="noreferrer">
                   LC
                 </a>
               </span>
@@ -129,10 +129,10 @@ const Texts = styled.div`
     color: #fffb00;
     background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    #237557 0%,
+    #ff1361 29%,
+    #fff361 67%,
+    #fff870 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -141,7 +141,7 @@ const Texts = styled.div`
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  animation: textclip 5s linear infinite;
   }
   @keyframes textclip {
   to {

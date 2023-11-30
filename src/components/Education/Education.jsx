@@ -33,6 +33,7 @@ const EducationCard = styled.li`
   &:hover {
     transform: translateY(-10px);
   }
+  filter: drop-shadow(5px 5px 5px #fffb00);
 `;
 
 const Institution = styled.h3`

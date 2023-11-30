@@ -80,7 +80,7 @@ const Footer = () => {
             </Zoom>
             <Zoom>
               <span>
-                <a href="https://www.facebook.com/yash.harad.0836/" target="_blank" rel="noreferrer">
+                <a href="https://leetcode.com/Yash_Harad/" target="_blank" rel="noreferrer">
                   LC
                 </a>
               </span>

@@ -34,12 +34,13 @@ const ExperienceCard = styled.li`
   padding: 20px;
   margin-bottom: 20px;
   position: relative;
+  filter: drop-shadow(5px 5px 5px #fffb00);
 `;
 
 const Timeline = styled.div`
   position: absolute;
   width: 3px;
-  height: 570px;
+  height: 580px;
   background-color: #fffb00;
   left: -50px;
   top: 0;
@@ -99,26 +100,10 @@ const mediaQuery = '@media (max-width: 768px)';
 const ResponsiveExperienceCard = styled(ExperienceCard)`
   ${mediaQuery} {
     flex-direction: column;
+    filter: drop-shadow(5px 5px 5px #fffb00);
   }
 `;
 
-const ResponsiveTimelineDot = styled(TimelineDot)`
-  ${mediaQuery} {
-     display: none;
-  }
-`;
-
-const ResponsiveTimeline = styled(Timeline)`
-  ${mediaQuery} {
-    height: auto;
-  }
-`;
-
-const ResponsiveHorizontalLine = styled(HorizontalLine)`
-  ${mediaQuery} {
-    display: none;
-  }
-`;
 
 const CompanyLogo = styled.img`
   height:50px;
@@ -128,7 +113,7 @@ const CompanyLogo = styled.img`
 const Experience = () => {
   return (
     <ExperienceSection id="experience">
-      <Slide direction='left'>
+      <Slide direction='left' duration={2000}>
         <ExperienceContainer>
           <ExperienceHeader><FontAwesomeIcon icon={faBriefcase} /> Experience</ExperienceHeader>
           <ExperienceList>
@@ -136,7 +121,7 @@ const Experience = () => {
               <TimelineDot />
               <Timeline />
               <HorizontalLine />
-              <Slide direction='right'>
+              <Slide direction='right' duration={2000}>
                 <CompanyLogo src={alhansat} alt="Company 1 Logo" />
                 <div>
                   <Position>Full Stack Web Developer Intern</Position>
@@ -152,7 +137,7 @@ const Experience = () => {
             </ExperienceCard>
             <ExperienceCard>
               <HorizontalLine />
-              <Slide direction='right'>
+              <Slide direction='right' duration={2000}>
                 <CompanyLogo src={devtown} alt="Company 1 Logo" />
                 <div>
                   <Position>Full-stack Developer Intern</Position>
@@ -168,7 +153,7 @@ const Experience = () => {
             </ExperienceCard>
             <ExperienceCard>
               <HorizontalLine />
-              <Slide direction='right'>
+              <Slide direction='right' duration={2000}>
                 <CompanyLogo src={twowaits} alt="Company 1 Logo" />
                 <div>
                   <Position>Tathastu Python Scholar Intern</Position>
