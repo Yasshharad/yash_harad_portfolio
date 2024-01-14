@@ -6,6 +6,8 @@ import { Slide } from "react-awesome-reveal";
 import alhansat from '../../images/alhansat.jpg';
 import devtown from '../../images/devtown_in_logo.jpg';
 import twowaits from '../../images/twowaits_technologies_logo.jpg';
+import oasis from '../../images/oasis_infobyte_logo.jpg';
+import bharat from '../../images/bharat_intern_logo.jpg';
 
 const ExperienceSection = styled.section`
   padding: 50px 0;
@@ -94,17 +96,6 @@ const ResponsibilityItem = styled.li`
   color: #fffb00;
 `;
 
-// Media query for smaller screens
-const mediaQuery = '@media (max-width: 768px)';
-
-const ResponsiveExperienceCard = styled(ExperienceCard)`
-  ${mediaQuery} {
-    flex-direction: column;
-    filter: drop-shadow(5px 5px 5px #fffb00);
-  }
-`;
-
-
 const CompanyLogo = styled.img`
   height:50px;
   margin-right: 20px;
@@ -119,6 +110,40 @@ const Experience = () => {
           <ExperienceList>
             <ExperienceCard>
               <TimelineDot />
+              <Timeline />
+              <HorizontalLine />
+              <Slide direction='right' duration={2000}>
+                <CompanyLogo src={bharat} alt="Company 1 Logo" />
+                <div>
+                  <Position>Full Stack Web Developer Intern</Position>
+                  <Company>Bharat Intern</Company>
+                  <EmploymentDate>Jan 2024 - Current · 1 month</EmploymentDate>
+                  <Responsibilities>
+                    <ResponsibilityItem>· HTML5 · Cascading Style Sheets (CSS) </ResponsibilityItem>
+                    <ResponsibilityItem>· Node.js· Express.js </ResponsibilityItem>
+                    <ResponsibilityItem>· JavaScript · MongoDB</ResponsibilityItem>
+                  </Responsibilities>
+                </div>
+              </Slide>
+            </ExperienceCard>
+            <ExperienceCard>
+              <Timeline />
+              <HorizontalLine />
+              <Slide direction='right' duration={2000}>
+                <CompanyLogo src={oasis} alt="Company 1 Logo" />
+                <div>
+                  <Position>Web Development and Design Intern</Position>
+                  <Company>Oasis Infobyte</Company>
+                  <EmploymentDate>Dec 2023 - Jan 2024 · 2 months</EmploymentDate>
+                  <Responsibilities>
+                    <ResponsibilityItem>· HTML5 · React.js · Node.js</ResponsibilityItem>
+                    <ResponsibilityItem>· Express.js · MongoDB</ResponsibilityItem>
+                    <ResponsibilityItem>· JavaScript · Cascading Style Sheets (CSS)</ResponsibilityItem>
+                  </Responsibilities>
+                </div>
+              </Slide>
+            </ExperienceCard>
+            <ExperienceCard>
               <Timeline />
               <HorizontalLine />
               <Slide direction='right' duration={2000}>

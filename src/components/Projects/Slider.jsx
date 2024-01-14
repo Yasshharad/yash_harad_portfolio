@@ -9,11 +9,12 @@ let data = [
     name: "Portfolio",
     img: "https://res.cloudinary.com/db0txesgq/image/upload/v1701331867/Capture_x4dodj.jpg",
     disc: "Portfolio made using ReactJs and Styled Component.",
-    github: "https://github.com/Yasshharad/yash_harad_portfolio"
+    github: "https://github.com/Yasshharad/yash_harad_portfolio",
+    demo: "/"
   },
   {
     name: "YatraSahayak-Ai based Intinerary Planner",
-    img: "https://res.cloudinary.com/db0txesgq/image/upload/v1701331427/1_widwh0.jpg",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1705244136/yatra_rwtdfd.jpg",
     disc: "Travel Itinerary planner using MERN stack and Ai algorithms.",
     github: "https://github.com/Yasshharad/Yatra_Sahayak"
   },
@@ -54,6 +55,20 @@ let data = [
     disc: "This project was done during Full Stack Internship. Frontend application using HTML, CSS and JS where you can add task, delete, and update.",
     github: "https://github.com/Yasshharad/task_management_application",
     demo: "https://task-management-application-woad.vercel.app/"
+  },
+  {
+    name: "Temperature Converter",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1705243347/temperature_zfphml.jpg",
+    disc: "This project was done during web development Internship at Oasis Infobyte which is made using HTML, CSS and JS.",
+    github: "https://github.com/Yasshharad/temperature_converter",
+    demo: "https://yasshharad.github.io/temperature_converter/"
+  },
+  {
+    name: "ExpressVPN_landing_page",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1705243004/expressVPN_hxolpn.jpg",
+    disc: "This project was done during web development Internship at Oasis Infobyte. Frontend application using HTML, CSS.",
+    github: "https://github.com/Yasshharad/ExpressVPN_landing_page",
+    demo: "https://yasshharad.github.io/ExpressVPN_landing_page/"
   },
   {
     name: "HotStar-Landing-page",

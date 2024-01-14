@@ -148,6 +148,7 @@ const Profile = styled.div`
     padding: 1rem 0;
     h1 {
       font-size: 1.2rem;
+      color: ##fffb00;
     }
 
     p {
