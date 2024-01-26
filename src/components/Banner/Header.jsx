@@ -5,7 +5,6 @@ import logo_yash from '../../images/logo_yash.jpeg';
 const Header = () => {
     const [bar, setBar] = useState(false);
 
-    // Function to toggle the sidebar when a navigation link is clicked
     const handleNavLinkClick = () => {
         setBar(!bar);
     };
