@@ -43,6 +43,18 @@ let data = [
     github: "https://github.com/Yasshharad/zomato_clone"
   },
   {
+    name: "Registration Form",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1706281165/thumbnail_hws3fv.jpg",
+    disc: "This project was done during Full Stack Internship. Made using HTML, CSS, JS, Nodejs and MongoDB.",
+    github: "https://github.com/Yasshharad/Task1_Bharat_Intern"
+  },
+  {
+    name: "Money Tracker Web Application",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1706281411/money_tracker_tdf5e4.jpg",
+    disc: "This project is money tracking web application made using HTML, CSS, JS, Nodejs and MongoDB.",
+    github: "https://github.com/Yasshharad/Task2_Bharat_Intern"
+  },
+  {
     name: "book_my_show_clone",
     img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1694692077/bookmyshow_ca2slg.jpg",
     disc: "This project was done during Full Stack Internship. Frontend using ReactJs and Tailwind Css.",
