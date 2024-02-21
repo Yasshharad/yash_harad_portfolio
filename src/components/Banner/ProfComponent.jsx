@@ -68,7 +68,7 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span>
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href="https://yasshharad.github.io/yash_harad_portfolio/" target="_blank" rel="noreferrer">
                   <GiEarthAmerica />
                 </a>
               </span>
