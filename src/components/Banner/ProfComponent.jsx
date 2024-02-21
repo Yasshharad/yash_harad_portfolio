@@ -18,7 +18,7 @@ const ProfComponent = () => {
           <span className="green">I'am</span>
           <h1 className="green">Yash Harad</h1>
           <h3>Full Stack Web Developer</h3>
-          <a href="https://drive.google.com/file/d/1ccLAh8ZJpq-FGA42B6M2af2BCOU51Bki/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/15kJLdBoYxpBb2OVvcGIZZKPWGqFXUmGC/view?usp=sharing" target="_blank" rel="noreferrer">
             Checkout My Resume
           </a>
           <br />

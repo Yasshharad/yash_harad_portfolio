@@ -15,14 +15,21 @@ let data = [
   {
     name: "YatraSahayak-Ai based Intinerary Planner",
     img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1705244136/yatra_rwtdfd.jpg",
-    disc: "Travel Itinerary planner using MERN stack and Ai algorithms.",
-    github: "https://github.com/Yasshharad/Yatra_Sahayak"
+    disc: "Travel Itinerary planner using MERN stack and genetic algorithm.",
+    github: "https://github.com/Yasshharad/yatra_sahayak_new"
   },
   {
     name: "Sales Prediction For Grocery Store",
     img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1694691208/saless_bgeysx.png",
     disc: "Machine Learning Model using Linear Regression.",
     github: "https://github.com/Yasshharad/sales_prediction_grocery_store"
+  },
+  {
+    name: "BuyShoes_Ecommerce_website",
+    img: "https://res.cloudinary.com/db0txesgq/image/upload/v1708528139/BuyShoes_kkkabu.jpg",
+    disc: "Ecommerce platform made using Html, Css, JS, and Bootstrap.",
+    github: "https://github.com/Yasshharad/BuyShoes_Ecommerce_website",
+    demo: "https://yasshharad.github.io/BuyShoes_Ecommerce_website/"
   },
   {
     name: "Portfoli-MERN",

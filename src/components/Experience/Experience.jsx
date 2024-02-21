@@ -8,6 +8,7 @@ import devtown from '../../images/devtown_in_logo.jpg';
 import twowaits from '../../images/twowaits_technologies_logo.jpg';
 import oasis from '../../images/oasis_infobyte_logo.jpg';
 import bharat from '../../images/bharat_intern_logo.jpg';
+import internship_studio from '../../images/internship_studio_logo.jpg';
 
 const ExperienceSection = styled.section`
   padding: 50px 0;
@@ -113,11 +114,27 @@ const Experience = () => {
               <Timeline />
               <HorizontalLine />
               <Slide direction='right' duration={2000}>
+                <CompanyLogo src={internship_studio} alt="Company 1 Logo" />
+                <div>
+                  <Position>Web Development and Design Intern</Position>
+                  <Company>Internship Studio</Company>
+                  <EmploymentDate>Jan 2024 - Present</EmploymentDate>
+                  <Responsibilities>
+                    <ResponsibilityItem>· HTML5 · JavaScript · Cascading Style Sheets (CSS) </ResponsibilityItem>
+                    <ResponsibilityItem>· React.js · Bootstrap</ResponsibilityItem>
+                  </Responsibilities>
+                </div>
+              </Slide>
+            </ExperienceCard>
+            <ExperienceCard>
+              <Timeline />
+              <HorizontalLine />
+              <Slide direction='right' duration={2000}>
                 <CompanyLogo src={bharat} alt="Company 1 Logo" />
                 <div>
                   <Position>Full Stack Web Developer Intern</Position>
                   <Company>Bharat Intern</Company>
-                  <EmploymentDate>Jan 2024 - Current · 1 month</EmploymentDate>
+                  <EmploymentDate>Jan 2024 - Feb 2024 · 1 month</EmploymentDate>
                   <Responsibilities>
                     <ResponsibilityItem>· HTML5 · Cascading Style Sheets (CSS) </ResponsibilityItem>
                     <ResponsibilityItem>· Node.js· Express.js </ResponsibilityItem>
@@ -134,7 +151,7 @@ const Experience = () => {
                 <div>
                   <Position>Web Development and Design Intern</Position>
                   <Company>Oasis Infobyte</Company>
-                  <EmploymentDate>Dec 2023 - Jan 2024 · 2 months</EmploymentDate>
+                  <EmploymentDate>Dec 2023 - Jan 2024 · 1 month</EmploymentDate>
                   <Responsibilities>
                     <ResponsibilityItem>· HTML5 · React.js · Node.js</ResponsibilityItem>
                     <ResponsibilityItem>· Express.js · MongoDB</ResponsibilityItem>
