@@ -28,6 +28,10 @@ const SkillList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Adjusted for mobile screens */
+  }
 `;
 
 const SkillItem = styled.li`
