@@ -32,6 +32,13 @@ let data = [
     demo: "https://yasshharad.github.io/BuyShoes_Ecommerce_website/"
   },
   {
+    name: "Website Image Extractor",
+    img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1709996504/image_extractor_ygm6bv.png",
+    disc: "It is image extractor web application for public websites made using Svelte, Svelte API, Html, Css, JS, Nodejs, ExpressJs, and Web Scraping.",
+    github: "https://github.com/Yasshharad/Devstar_img.extractor",
+    demo: "https://visualm.onrender.com/"
+  },
+  {
     name: "Portfoli-MERN",
     img: "https://res.cloudinary.com/dimfp6jdv/image/upload/v1694696947/mern_portfolio_y5vzki.jpg",
     disc: "This is personal portfolio website using: React node.js express.js MongoDB three.js. You can update your profile and projects.",
