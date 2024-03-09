@@ -19,7 +19,6 @@ const SkillsHeader = styled.h2`
   p {
     color: #fffb00;
     font-size: 30px;
-    margin-right: 600px;
   }
 `;
 
@@ -29,9 +28,6 @@ const SkillList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 skills in 1 row on mobile screens */
-  }
 `;
 
 const SkillItem = styled.li`
@@ -51,13 +47,6 @@ const SvgWrapper = styled.svg`
 `;
 
 const Skills = () => {
-
-  const animateSkill = (element, circumference, level) => {
-    const offset = circumference - (level / 100) * circumference; // Set initial offset based on level in clockwise direction
-    element.style.strokeDashoffset = offset;
-    element.style.transition = 'stroke-dashoffset 2s ease-in-out';
-  };
-
   const skills = [
     { name: 'HTML', level: 90 },
     { name: 'CSS', level: 85 },
@@ -67,71 +56,52 @@ const Skills = () => {
     { name: 'Svelte', level: 75 },
   ];
 
-  useEffect(() => {
-    skills.forEach(skill => {
-      const radius = 40;
-      const circumference = 2 * Math.PI * radius;
-
-      const progressCircle = document.getElementById(`progress-circle-${skill.name}`);
-      progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-      progressCircle.style.strokeDashoffset = circumference; // Start with full circumference
-
-      animateSkill(progressCircle, circumference, skill.level);
-    });
-  }, []);
-
   const skill1s = [
     { name: 'NodeJs', level: 90 },
     { name: 'ExpressJs', level: 90 }
   ];
-
-  useEffect(() => {
-    skill1s.forEach(skill1 => {
-      const radius = 40;
-      const circumference = 2 * Math.PI * radius;
-
-      const progressCircle = document.getElementById(`progress-circle-${skill1.name}`);
-      progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-      progressCircle.style.strokeDashoffset = circumference; // Start with full circumference
-
-      animateSkill(progressCircle, circumference, skill1.level);
-    });
-  }, []);
 
   const skill2s = [
     { name: 'MongoDB', level: 90 },
     { name: 'MySQL', level: 90 }
   ];
 
-  useEffect(() => {
-    skill2s.forEach(skill2 => {
-      const radius = 40;
-      const circumference = 2 * Math.PI * radius;
-
-      const progressCircle = document.getElementById(`progress-circle-${skill2.name}`);
-      progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-      progressCircle.style.strokeDashoffset = circumference; // Start with full circumference
-
-      animateSkill(progressCircle, circumference, skill2.level);
-    });
-  }, []);
-
   const skill3s = [
     { name: 'Java', level: 80 },
     { name: 'Python', level: 60 }
   ];
 
-  useEffect(() => {
-    skill3s.forEach(skill3 => {
+  const animateSkill = (element, circumference, level) => {
+    const offset = circumference - (level / 100) * circumference;
+    element.style.strokeDashoffset = offset;
+    element.style.transition = 'stroke-dashoffset 2s ease-in-out';
+  };
+
+  const animateSkills = (skills) => {
+    skills.forEach(skill => {
       const radius = 40;
       const circumference = 2 * Math.PI * radius;
-
-      const progressCircle = document.getElementById(`progress-circle-${skill3.name}`);
+      const progressCircle = document.getElementById(`progress-circle-${skill.name}`);
       progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-      progressCircle.style.strokeDashoffset = circumference; // Start with full circumference
-
-      animateSkill(progressCircle, circumference, skill3.level);
+      progressCircle.style.strokeDashoffset = circumference;
+      animateSkill(progressCircle, circumference, skill.level);
     });
+  };
+
+  useEffect(() => {
+    animateSkills(skills);
+  }, []);
+
+  useEffect(() => {
+    animateSkills(skill1s);
+  }, []);
+
+  useEffect(() => {
+    animateSkills(skill2s);
+  }, []);
+
+  useEffect(() => {
+    animateSkills(skill3s);
   }, []);
 
   return (
@@ -139,7 +109,7 @@ const Skills = () => {
       <Slide direction='left'>
         <SkillsContainer>
           <SkillsHeader>
-            Skills <br /><br /> <p>Frontend</p>
+            Skills <br /><p>Frontend</p>
           </SkillsHeader>
           <SkillList>
             {skills.map((skill, index) => (
@@ -155,7 +125,7 @@ const Skills = () => {
                     stroke="#fffb00"
                     strokeWidth="10"
                     strokeLinecap="round"
-                    transform="rotate(-90, 50, 50)" // Start from the top (12 o'clock position)
+                    transform="rotate(-90, 50, 50)"
                   />
                 </SvgWrapper>
               </SkillItem>
@@ -184,7 +154,7 @@ const Skills = () => {
                     stroke="#fffb00"
                     strokeWidth="10"
                     strokeLinecap="round"
-                    transform="rotate(-90, 50, 50)" // Start from the top (12 o'clock position)
+                    transform="rotate(-90, 50, 50)"
                   />
                 </SvgWrapper>
               </SkillItem>
@@ -242,7 +212,7 @@ const Skills = () => {
                     stroke="#fffb00"
                     strokeWidth="10"
                     strokeLinecap="round"
-                    transform="rotate(-90, 50, 50)" // Start from the top (12 o'clock position)
+                    transform="rotate(-90, 50, 50)"
                   />
                 </SvgWrapper>
               </SkillItem>
@@ -250,7 +220,6 @@ const Skills = () => {
           </SkillList>
         </SkillsContainer>
       </Slide>
-
     </SkillsSection>
   );
 };

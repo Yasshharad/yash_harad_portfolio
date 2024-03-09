@@ -66,8 +66,8 @@ const SplashScreen = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setTypedText(false);
-            setTypedOutputText(false);
+            setTypedText('');
+            setTypedOutputText('');
             setShowText3(true);
         }, 4300);
     }, []);
