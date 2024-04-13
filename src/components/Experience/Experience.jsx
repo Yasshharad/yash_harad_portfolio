@@ -9,6 +9,7 @@ import twowaits from '../../images/twowaits_technologies_logo.jpg';
 import oasis from '../../images/oasis_infobyte_logo.jpg';
 import bharat from '../../images/bharat_intern_logo.jpg';
 import internship_studio from '../../images/internship_studio_logo.jpg';
+import stat from '../../images/stat.jpeg';
 
 const ExperienceSection = styled.section`
   padding: 50px 0;
@@ -114,8 +115,35 @@ const Experience = () => {
         <ExperienceContainer>
           <ExperienceHeader><FontAwesomeIcon icon={faBriefcase} /> Experience</ExperienceHeader>
           <ExperienceList>
-            <ExperienceCard>
+          <ExperienceCard>
               <TimelineDot />
+              <Timeline />
+              <HorizontalLine />
+              <Slide direction='right' duration={2000}>
+                <CompanyLogo src={stat} alt="Company 1 Logo" />
+                <div>
+                  <Position>Back End Developer</Position>
+                  <Company>stat. - Connect . Play . Record</Company>
+                  <EmploymentDate>Apr 2024 - PRESENT · 1 month</EmploymentDate>
+                  <Responsibilities>
+                    <ResponsibilityItem>· Node.js · Express.js · JavaScript · MongoDB</ResponsibilityItem>
+                  </Responsibilities>
+                  <Description>
+                  · Lead the design, development, and implementation of high-performance backend applications using modern technologies like Node.js, ensuring scalability and security.
+                  </Description>
+                  <Description>
+                  · Collaborate closely with cross-functional teams to seamlessly integrate frontend components, design elements, and product features into robust software solutions.
+                  </Description>
+                  <Description>
+                  · Employ efficient data storage mechanisms, including SQL and NoSQL databases and caching systems, optimizing application performance and reliability.
+                  </Description>
+                  <Description>
+                  · Drive code reviews, refactoring, and adherence to best practices to bolster application security and maintainability while staying abreast of industry trends and standards, fostering team growth and knowledge sharing.
+                  </Description>
+                </div>
+              </Slide>
+            </ExperienceCard>
+            <ExperienceCard>
               <Timeline />
               <HorizontalLine />
               <Slide direction='right' duration={2000}>

@@ -25,9 +25,7 @@ const ProfComponent = () => {
 
           <p>
             <br />
-            Adaptable Full-stack Stack Developer with lengthy web development experience. Fluent in
-            development languages, database building, and cache mechanisms. Expertly manages end-to-end life cycles of software systems, running routine tests and installing necessary upgrades.
-
+            Experienced Full-stack Developer adept at managing software life cycles, conducting routine tests, and implementing upgrades. Skilled in multiple development languages, database building, and cache mechanisms. Exceptional teamwork and communication abilities, fostering effective collaboration among colleagues. Adaptable and detail-oriented, consistently delivering high-quality results.
           </p>
           <button><a href="#footer">
             Let's Talk
